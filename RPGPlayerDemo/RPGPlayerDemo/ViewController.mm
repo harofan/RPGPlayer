@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Mp3Encoder.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//    Mp3Encoder *encoder = new Mp3Encoder();
+//    encoder->encode();
+//    delete encoder;
+    
 }
 
 
