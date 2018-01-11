@@ -34,10 +34,10 @@ int Mp3Encoder::init(const char *pcm_file_path, const char *mp3_file_path, int s
 
 void Mp3Encoder::encode() {
     int bufferSize = 1024 * 256;
-    short* buffer = new short[bufferSize / 2];
-    short* leftBuffer = new short[bufferSize / 4];
-    short* rightBuffer = new short[bufferSize / 4];
-    unsigned char* mp3_buffer = new unsigned char[bufferSize];
+    short *buffer = new short[bufferSize / 2];
+    short *leftBuffer = new short[bufferSize / 4];
+    short *rightBuffer = new short[bufferSize / 4];
+    unsigned char *mp3_buffer = new unsigned char[bufferSize];
     size_t readBufferSize = 0;
     while ((readBufferSize = fread(buffer, 2, bufferSize / 2, pcm_file)) > 0) {
         for (int i = 0; i < readBufferSize; i++) {

@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A69709B6200706780021EC16 /* RPGPlayerManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A69709B5200706780021EC16 /* RPGPlayerManager.mm */; };
+		A69709C320070E9B0021EC16 /* RPGAudioEncodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69709C120070E9B0021EC16 /* RPGAudioEncodeController.m */; };
+		A69709C420070E9B0021EC16 /* RPGAudioEncodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69709C220070E9B0021EC16 /* RPGAudioEncodeController.xib */; };
+		A69709C720070EC00021EC16 /* NSString+RPGExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = A69709C620070EC00021EC16 /* NSString+RPGExtra.m */; };
+		A69709C920070FA50021EC16 /* vocal.pcm in Resources */ = {isa = PBXBuildFile; fileRef = A69709C820070FA50021EC16 /* vocal.pcm */; };
 		A6DE84B52005A84500177A9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DE84B42005A84500177A9E /* AppDelegate.m */; };
-		A6DE84B82005A84500177A9E /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6DE84B72005A84500177A9E /* ViewController.mm */; };
+		A6DE84B82005A84500177A9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DE84B72005A84500177A9E /* ViewController.m */; };
 		A6DE84BB2005A84500177A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6DE84B92005A84500177A9E /* Main.storyboard */; };
 		A6DE84BD2005A84500177A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6DE84BC2005A84500177A9E /* Assets.xcassets */; };
 		A6DE84C02005A84500177A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6DE84BE2005A84500177A9E /* LaunchScreen.storyboard */; };
@@ -37,11 +42,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A69709B4200706780021EC16 /* RPGPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPGPlayerManager.h; sourceTree = "<group>"; };
+		A69709B5200706780021EC16 /* RPGPlayerManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RPGPlayerManager.mm; sourceTree = "<group>"; };
+		A69709BB20070D4F0021EC16 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A69709BD20070E210021EC16 /* RPGPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPGPlayer.h; sourceTree = "<group>"; };
+		A69709C020070E9B0021EC16 /* RPGAudioEncodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGAudioEncodeController.h; sourceTree = "<group>"; };
+		A69709C120070E9B0021EC16 /* RPGAudioEncodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGAudioEncodeController.m; sourceTree = "<group>"; };
+		A69709C220070E9B0021EC16 /* RPGAudioEncodeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RPGAudioEncodeController.xib; sourceTree = "<group>"; };
+		A69709C520070EC00021EC16 /* NSString+RPGExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+RPGExtra.h"; sourceTree = "<group>"; };
+		A69709C620070EC00021EC16 /* NSString+RPGExtra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+RPGExtra.m"; sourceTree = "<group>"; };
+		A69709C820070FA50021EC16 /* vocal.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = vocal.pcm; sourceTree = "<group>"; };
 		A6DE84B02005A84500177A9E /* RPGPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPGPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DE84B32005A84500177A9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6DE84B42005A84500177A9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A6DE84B62005A84500177A9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A6DE84B72005A84500177A9E /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		A6DE84B72005A84500177A9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A6DE84BA2005A84500177A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6DE84BC2005A84500177A9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6DE84BF2005A84500177A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,6 +100,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A69709AD2006FCA00021EC16 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				A69709BE20070E9B0021EC16 /* Extra */,
+				A69709BF20070E9B0021EC16 /* ViewController */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		A69709B3200706420021EC16 /* ObjectiveC Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A69709B4200706780021EC16 /* RPGPlayerManager.h */,
+				A69709B5200706780021EC16 /* RPGPlayerManager.mm */,
+			);
+			path = "ObjectiveC Interface";
+			sourceTree = "<group>";
+		};
+		A69709B920070B7F0021EC16 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A69709C820070FA50021EC16 /* vocal.pcm */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A69709BE20070E9B0021EC16 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				A69709C520070EC00021EC16 /* NSString+RPGExtra.h */,
+				A69709C620070EC00021EC16 /* NSString+RPGExtra.m */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		A69709BF20070E9B0021EC16 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A69709C020070E9B0021EC16 /* RPGAudioEncodeController.h */,
+				A69709C120070E9B0021EC16 /* RPGAudioEncodeController.m */,
+				A69709C220070E9B0021EC16 /* RPGAudioEncodeController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		A6DE84A72005A84500177A9E = {
 			isa = PBXGroup;
 			children = (
@@ -108,16 +168,19 @@
 		A6DE84B22005A84500177A9E /* RPGPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A69709AD2006FCA00021EC16 /* Class */,
 				A6DE84E52005A91A00177A9E /* RPGPlayer */,
 				A6DE84B32005A84500177A9E /* AppDelegate.h */,
 				A6DE84B42005A84500177A9E /* AppDelegate.m */,
 				A6DE84B62005A84500177A9E /* ViewController.h */,
-				A6DE84B72005A84500177A9E /* ViewController.mm */,
+				A6DE84B72005A84500177A9E /* ViewController.m */,
 				A6DE84B92005A84500177A9E /* Main.storyboard */,
 				A6DE84BC2005A84500177A9E /* Assets.xcassets */,
 				A6DE84BE2005A84500177A9E /* LaunchScreen.storyboard */,
 				A6DE84C12005A84500177A9E /* Info.plist */,
 				A6DE84C22005A84500177A9E /* main.m */,
+				A69709BB20070D4F0021EC16 /* PrefixHeader.pch */,
+				A69709B920070B7F0021EC16 /* Resource */,
 			);
 			path = RPGPlayerDemo;
 			sourceTree = "<group>";
@@ -143,8 +206,10 @@
 		A6DE84E52005A91A00177A9E /* RPGPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				A69709B3200706420021EC16 /* ObjectiveC Interface */,
 				A6DE84EB200610CC00177A9E /* ThirdLib */,
 				A6DE84E62005BD6F00177A9E /* Encode */,
+				A69709BD20070E210021EC16 /* RPGPlayer.h */,
 			);
 			path = RPGPlayer;
 			sourceTree = "<group>";
@@ -261,6 +326,7 @@
 		A6DE84A82005A84500177A9E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RPG;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = RPGLiker;
 				TargetAttributes = {
@@ -305,8 +371,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69709C920070FA50021EC16 /* vocal.pcm in Resources */,
 				A6DE84C02005A84500177A9E /* LaunchScreen.storyboard in Resources */,
 				A6DE84BD2005A84500177A9E /* Assets.xcassets in Resources */,
+				A69709C420070E9B0021EC16 /* RPGAudioEncodeController.xib in Resources */,
 				A6DE84BB2005A84500177A9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,8 +400,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6DE84B82005A84500177A9E /* ViewController.mm in Sources */,
+				A6DE84B82005A84500177A9E /* ViewController.m in Sources */,
+				A69709C720070EC00021EC16 /* NSString+RPGExtra.m in Sources */,
 				A6DE84C32005A84500177A9E /* main.m in Sources */,
+				A69709C320070E9B0021EC16 /* RPGAudioEncodeController.m in Sources */,
+				A69709B6200706780021EC16 /* RPGPlayerManager.mm in Sources */,
 				A6DE84B52005A84500177A9E /* AppDelegate.m in Sources */,
 				A6DE84E92005BD8800177A9E /* Mp3Encoder.cpp in Sources */,
 			);
@@ -501,6 +572,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V3P7E8N222;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = RPGPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -522,6 +594,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V3P7E8N222;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = RPGPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
