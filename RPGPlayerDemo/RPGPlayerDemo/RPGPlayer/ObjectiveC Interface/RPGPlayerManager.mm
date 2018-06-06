@@ -7,7 +7,7 @@
 //
 
 #import "RPGPlayerManager.h"
-#import "Mp3Encoder.h"
+#import "RPGMp3Encoder.h"
 
 @implementation RPGPlayerManager
 
@@ -27,15 +27,20 @@ static RPGPlayerManager *_share = nil;
 }
 
 #pragma mark - audio encode
-- (void)pcmToMp3EncodeWithPcmFilePath:(NSString *)pcmFilePath mp3FilePath:(NSString *)mp3FilePath sampleRate:(int)sampleRate channels:(int)channels bitRate:(int)bitRate{
+- (BOOL)pcmToMp3EncodeWithPcmFilePath:(NSString *)pcmFilePath mp3FilePath:(NSString *)mp3FilePath sampleRate:(int)sampleRate channels:(int)channels bitRate:(int)bitRate{
     NSLog(@"Start Encode...");
-    Mp3Encoder *encoder = new Mp3Encoder();
-    const char* pcm_file_path = [pcmFilePath cStringUsingEncoding:NSUTF8StringEncoding];
+    RPGMp3Encoder *encoder = new RPGMp3Encoder();
+    const char *pcm_file_path = [pcmFilePath cStringUsingEncoding:NSUTF8StringEncoding];
     const char *mp3_file_path = [mp3FilePath cStringUsingEncoding:NSUTF8StringEncoding];
-    encoder->init(pcm_file_path, mp3_file_path, sampleRate, channels, bitRate);
-    encoder->encode();
+    int ret = encoder->init(pcm_file_path, mp3_file_path, sampleRate, channels, bitRate);
+    if (ret == 0) {
+        encoder->encode();
+        NSLog(@"Encode Success");
+    }else{
+        NSLog(@"Encode Failure");
+    }
     encoder->destory();
     delete encoder;
-    NSLog(@"Encode Success");
+    return !ret;//ret 为0成功
 }
 @end

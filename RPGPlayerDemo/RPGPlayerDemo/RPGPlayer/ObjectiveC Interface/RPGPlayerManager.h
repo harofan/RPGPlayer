@@ -14,5 +14,5 @@
 + (instancetype)shareManager;
 
 #pragma mark - audio encode
-- (void)pcmToMp3EncodeWithPcmFilePath:(NSString *)pcmFilePath mp3FilePath:(NSString *)mp3FilePath sampleRate:(int)sampleRate channels:(int)channels bitRate:(int)bitRate;
+- (BOOL)pcmToMp3EncodeWithPcmFilePath:(NSString *)pcmFilePath mp3FilePath:(NSString *)mp3FilePath sampleRate:(int)sampleRate channels:(int)channels bitRate:(int)bitRate;
 @end
